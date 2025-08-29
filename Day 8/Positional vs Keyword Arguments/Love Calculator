@@ -1,0 +1,7 @@
+def calculate_love_score(boy_name, girl_name):
+    combined_names = (boy_name + girl_name).lower()
+    true_count = sum(combined_names.count(letter) for letter in "true")
+    love_count = sum(combined_names.count(letter) for letter in "love")
+    love_score = int(f"{true_count}{love_count}")
+    print(f"Your Love Score is {love_score}")
+    return love_score

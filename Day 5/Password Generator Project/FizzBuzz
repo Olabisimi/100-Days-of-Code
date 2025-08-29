@@ -1,0 +1,2 @@
+Game = range(1, 101)
+if Game / 3:
